@@ -40,9 +40,6 @@ spec:
             - name: URL
               value: "https://outline.karhub.net"
 
-            - name: URL
-              value: "http://outline.karhub.net"
-              
             - name: FORCE_HTTPS
               value: "false"
 
