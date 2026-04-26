@@ -3,7 +3,7 @@ entries:
   outline:
   - apiVersion: v1
     appVersion: 0.69.1
-    created: "2026-04-26T01:31:24.739277278-03:00"
+    created: "2026-04-26T01:35:23.27592963-03:00"
     dependencies:
     - alias: redis
       condition: redis.enabled
@@ -11,7 +11,7 @@ entries:
       repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
       version: 15.4.1
     description: The outline helm chart to deploy outline in kubernetes clusters.
-    digest: 82271f9aed41ef461f8791bf58f1baa3666da42ed9599320e4dba305d2ce7080
+    digest: 48e917a716b52aff235fe408d29e702f3c91a1f112666f32f0edbcbdd819fa99
     home: https://encircle360.com
     keywords:
     - outline
@@ -31,14 +31,14 @@ entries:
     - https://gitlab.com/encircle360-oss/helm-charts/outline
     - https://github.com/encircle360-oss/outline-helm-chart
     urls:
-    - outline-0.0.1.tgz
-    version: 0.0.1
+    - outline-0.0.2.tgz
+    version: 0.0.2
   redis:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2026-04-26T01:31:24.743319137-03:00"
+    created: "2026-04-26T01:35:23.282271434-03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -67,4 +67,4 @@ entries:
     urls:
     - charts/redis-15.4.1.tgz
     version: 15.4.1
-generated: "2026-04-26T01:31:24.729090897-03:00"
+generated: "2026-04-26T01:35:23.261073185-03:00"
