@@ -1,0 +1,150 @@
+apiVersion: v1
+entries:
+  minio:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2021.6.17
+    created: "2026-04-26T00:41:45.181825442-03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Bitnami Object Storage based on MinIO&reg; is an object storage server,
+      compatible with Amazon S3 cloud storage service, mainly used for storing unstructured
+      data (such as photos, videos, log files, etc.)
+    digest: 452cdba53e01f2b78f788039a222442daf9b5e621bd4bf182c9e6af1e6216bad
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: minio
+    sources:
+    - https://github.com/bitnami/bitnami-docker-minio
+    - https://min.io
+    urls:
+    - charts/minio-7.2.0.tgz
+    version: 7.2.0
+  outline:
+  - apiVersion: v1
+    appVersion: 0.69.1
+    created: "2026-04-26T00:41:45.180575804-03:00"
+    dependencies:
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
+      version: 10.12.2
+    - alias: redis
+      condition: redis.enabled
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
+      version: 15.4.1
+    - alias: minio
+      condition: minio.enabled
+      name: minio
+      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
+      version: 7.2.0
+    description: The outline helm chart to deploy outline in kubernetes clusters.
+    digest: 9a7ec9e4bc1b88a2b01005e24ddf2aeb9a52d879316ec43fcd0bb2831ee598cb
+    home: https://encircle360.com
+    keywords:
+    - outline
+    - wiki
+    - helm
+    - chart
+    - kubernetes
+    - s3
+    - minio
+    - postgresql
+    - mongodb
+    - knowledge
+    maintainers:
+    - email: hello@encircle360.com
+      name: encircle360 GmbH
+      url: https://encircle360.com
+    name: outline
+    sources:
+    - https://gitlab.com/encircle360-oss/helm-charts/outline
+    - https://github.com/encircle360-oss/outline-helm-chart
+    urls:
+    - outline-0.0.8.tgz
+    version: 0.0.8
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.13.0
+    created: "2026-04-26T00:41:45.183613443-03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: 1efa1b8f1e0dd3b9b984fe56d342ec391d220f3ba649d668cd4eabfea1efe456
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - charts/postgresql-10.12.2.tgz
+    version: 10.12.2
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.2.6
+    created: "2026-04-26T00:41:45.187653414-03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: d57851dfeb82a32d55d5193a95fe48569300a32798a0f3045f10456eea51563a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - charts/redis-15.4.1.tgz
+    version: 15.4.1
+generated: "2026-04-26T00:41:45.171776449-03:00"
