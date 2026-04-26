@@ -20,3 +20,38 @@ redis:
     storageClass: ""
   auth:
     enabled: false
+
+postgresql:
+  enabled: false
+  architecture: "standalone"
+  postgresqlDatabase: "outline"
+  postgresqlUsername: "outline"
+  postgresqlPassword: "vh4rf^q32BcvtFqFVjny4pnM" # MUST be replaced with some secret password! Don't use this in production
+  postgresqlPostgresPassword: "Ma#wXFMz6jFqXUr^qP&K66XQbd" # MUST be replaced with some secret password! Don't use this in production
+  persistence:
+    enabled: true
+    storageClass: ""
+    size: 1Gi
+
+minio:
+  enabled: false
+  disableWebUI: false
+  ingress:
+    enabled: true
+    hostname: data.outline.yourdomain.tld
+    certManager: false
+    tls: false
+    annotations:
+      # cert-manager.io/cluster-issuer: "letsencrypt-staging"
+  mode: "standalone"
+  defaultBuckets: "ol-data" # should not be "outline" because of https://github.com/outline/outline/issues/2068
+  secretKey:
+    password: "Uk4LuwVFvRDiG6k4nYA5C^835V" # MUST be replaced with some custom generated secret! Don't use this in production
+  accessKey:
+    password: "zFPVNNK*QNp3^V4J38Gy76SehG" # MUST be replaced with some custom generated access_key! Don't use this in production
+  persistence:
+    enabled: true
+    storageClass: ""
+    size: 2Gi
+
+
