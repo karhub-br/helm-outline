@@ -37,17 +37,14 @@ spec:
             - name: PORT
               value: "3000"
 
-            {{- if .Values.ingress.host }}
-            {{- if .Values.ingress.tls.enabled }}
             - name: URL
-              value: "https://{{ .Values.ingress.host }}"
-            {{- else }}
+              value: "https://outline.karhub.net"
+
             - name: URL
-              value: "http://{{ .Values.ingress.host }}"
+              value: "http://outline.karhub.net"
             - name: FORCE_HTTPS
               value: "false"
-            {{- end }}
-            {{- end }}
+
 
             {{- range $key, $value := .Values.env }}
             - name: {{ $key }}
