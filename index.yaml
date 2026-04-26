@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2021.6.17
-    created: "2026-04-26T00:41:45.181825442-03:00"
+    created: "2026-04-26T00:52:29.56579073-03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -37,7 +37,7 @@ entries:
   outline:
   - apiVersion: v1
     appVersion: 0.69.1
-    created: "2026-04-26T00:41:45.180575804-03:00"
+    created: "2026-04-26T00:52:29.564256095-03:00"
     dependencies:
     - alias: postgresql
       condition: postgresql.enabled
@@ -55,7 +55,7 @@ entries:
       repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
       version: 7.2.0
     description: The outline helm chart to deploy outline in kubernetes clusters.
-    digest: 9a7ec9e4bc1b88a2b01005e24ddf2aeb9a52d879316ec43fcd0bb2831ee598cb
+    digest: 58b29fd78c507265b31d5347733d1362e0a5c5a0a9cce7c185720baa14279835
     home: https://encircle360.com
     keywords:
     - outline
@@ -84,7 +84,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.13.0
-    created: "2026-04-26T00:41:45.183613443-03:00"
+    created: "2026-04-26T00:52:29.567510432-03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -118,7 +118,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2026-04-26T00:41:45.187653414-03:00"
+    created: "2026-04-26T00:52:29.570149802-03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -147,4 +147,4 @@ entries:
     urls:
     - charts/redis-15.4.1.tgz
     version: 15.4.1
-generated: "2026-04-26T00:41:45.171776449-03:00"
+generated: "2026-04-26T00:52:29.537094897-03:00"
